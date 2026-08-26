@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bakhtawar Iftikhar</title>
+<meta name="description" content="Bakhtawar Iftikhar — ML Engineer → PhD-bound | Reliability & Generalization in Multimodal AI, RL & Clinical Systems.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <img class="photo" src="assets/my_pic.jpeg" alt="Bakhtawar Iftikhar" onerror="this.style.display='none'">
+    <div class="who">
+      <h1>Bakhtawar Iftikhar</h1>
+      <p class="role">ML Engineer &nbsp;·&nbsp; PhD Applicant</p>
+      <p class="links">
+        <a href="mailto:bkifti98@gmail.com">Email</a> &nbsp;/&nbsp;
+        <a href="https://github.com/bk-12346" target="_blank">GitHub</a> &nbsp;/&nbsp;
+        <a href="https://www.linkedin.com/in/bakhtawar-iftikhar/" target="_blank">LinkedIn</a> &nbsp;/&nbsp;
+        <!-- <a href="assets/cv.pdf" target="_blank">CV</a> -->
+      </p>
+    </div>
+  </header>
+
+  <section class="bio">
+    <p>
+      I am an ML Engineer at Alignerr, based in Dubai, applying for PhD positions in
+      <strong>medical AI and clinical machine learning</strong> for the 2026&ndash;27 cycle.
+      I completed my MSc in Artificial Intelligence at NUST Pakistan in 2025.
+    </p>
+    <p>
+      My research centers on <strong>reliability and generalization in multimodal AI,
+      reinforcement learning, and vision-language-action (VLA) systems</strong> &mdash; diagnosing
+      silent failure modes, distribution shift, and miscalibrated confidence rather than reporting
+      benchmark numbers at face value. I'm now applying that same diagnostic lens to clinical and
+      medical data, most directly through ongoing work on seizure detection from EEG.
+    </p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Reliability and failure diagnosis in multimodal and vision-language-action (VLA) models</li>
+      <li>Miscalibrated confidence and distribution shift in reinforcement learning and robotic policies</li>
+      <li>Applying diagnostic ML methods to clinical and medical data &mdash; EEG, pathology, EHR</li>
+    </ul>
+    <p>
+      I'm on the market for PhD positions in medical AI and clinical machine learning.
+      If my background in multimodal AI, reinforcement learning, and failure-mode diagnosis is a fit
+      for your lab, I'd love to connect &mdash; <a href="mailto:your.email@example.com">email me</a>.
+    </p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Selected Projects</h2>
+
+    <div class="entry">
+      <div class="entry-title"><a href="https://github.com/yourusername/eeg-seizure-fusion-probe" target="_blank">eeg-seizure-fusion-probe</a></div>
+      <div class="entry-body">
+        Seizure detection on CHB-MIT with LaBraM fine-tuning. Addressing severe class imbalance
+        (0.1&ndash;0.6% seizure windows) with sensitivity, AUC-PR, and false-alarms-per-hour as
+        primary metrics rather than accuracy. In progress &mdash; anchor project for current PhD applications.
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-title"><a href="https://github.com/yourusername/vla-grounding-probe" target="_blank">vla-grounding-probe</a></div>
+      <div class="entry-body">
+        Layer-wise probing of SmolVLA on LIBERO-Goal tasks. Language embedding similarity was
+        <em>lowest</em> for paraphrases and <em>highest</em> for object-swaps and negations &mdash; the
+        inverse of grounded conditioning &mdash; replicated in 4/7 tasks and cross-checked against the
+        CLIP-family affirmation-bias literature.
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-title"><a href="https://github.com/yourusername/Multimodal_Agentic_RL_System" target="_blank">Multimodal Agentic RL System</a></div>
+      <div class="entry-body">
+        Diagnosed FiLM vs. concat fusion failure modes in a language-conditioned RL policy. Naive
+        fusion caused language input to be silently ignored, and policy confidence was uninformative
+        for detecting failure (&sim;0.90 on wrong pickups vs. 0.92&ndash;0.96 on correct ones).
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-title">MSc Thesis &mdash; Factorial Study of PPO/SAC <span class="note">(preprint under review, Elsevier)</span></div>
+      <div class="entry-body">
+        A factorial study across algorithms (PPO/SAC), action spaces, and reward densities.
+        SAC fails catastrophically on hybrid action spaces &mdash; traced mechanistically to its
+        single-parameter entropy auto-tuning.
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-title"><a href="https://github.com/yourusername/astro-ib-probe" target="_blank">IB-AstroPT</a></div>
+      <div class="entry-body">
+        Information Bottleneck analysis of the AstroPT transformer. Clear depth-dependent fitting
+        signal, no resolvable compression &mdash; a null result, validated against a positive control.
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-title"><a href="https://github.com/yourusername/QuantVol" target="_blank">QuantVol</a></div>
+      <div class="entry-body">
+        HAR-RV vs. LightGBM/XGBoost for volatility forecasting. The simple econometric baseline won;
+        Optuna-tuned hyperparameters underperformed defaults in walk-forward evaluation.
+      </div>
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>News</h2>
+    <table class="news">
+      <tr><td class="date">Aug 2026</td><td>Applying to PhD programs in medical AI and clinical ML for the 2026&ndash;27 cycle, including Karolinska Institutet, University of Freiburg, University of Geneva, T&eacute;l&eacute;com Paris, University of Antwerp, and University of Oldenburg.</td></tr>
+      <tr><td class="date">2025</td><td>Completed MSc in Artificial Intelligence, NUST Pakistan. Thesis work submitted as a preprint to an Elsevier journal (under review).</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Bakhtawar Iftikhar. Built with plain HTML, hosted on GitHub Pages.</p>
+  </footer>
+
+</div>
+</body>
+</html>

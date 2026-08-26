@@ -1,0 +1,159 @@
+:root {
+  --ink: #1a1a1a;
+  --muted: #5b5b5b;
+  --line: #d9d9d9;
+  --link: #1a4fa0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 48px 20px 80px;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* header */
+.top {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.photo {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.who h1 {
+  font-size: 27px;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.role {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.links {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* bio */
+.bio {
+  margin-top: 28px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 28px 0;
+}
+
+h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* project / publication entries */
+.entry {
+  margin-bottom: 20px;
+}
+
+.entry-title {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.entry-title .note {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.entry-body {
+  color: #333;
+}
+
+/* news table */
+table.news {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.news td {
+  padding: 6px 0;
+  vertical-align: top;
+  border-top: 1px solid #f0f0f0;
+}
+
+table.news td.date {
+  width: 90px;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/* mobile */
+@media (max-width: 520px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .photo {
+    width: 96px;
+    height: 96px;
+  }
+  body {
+    padding: 32px 16px 60px;
+  }
+}
