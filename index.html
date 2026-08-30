@@ -33,9 +33,7 @@
       Electrical Engineering at GIKI, Pakistan in 2020.
     </p>
     <p>
-      My research interests lie in robotics and embodied AI, and in medical AI. Across both, I'm most interested in the cases where a model looks like it's working and
-      isn't — recent projects include layer-wise probing of a
-      VLA policy in robotic manipulation and seizure detection from EEG.
+     My research interests lie in medical AI, and in robotics and embodied AI. Across both, I'm most interested in the cases where a model looks like it's working and isn't — recent projects include seizure detection from EEG and layer-wise probing of a VLA policy in robotic manipulation.
     </p>
     <p>
       I'm currently on the market for PhD positions and open to opportunities across these areas.
@@ -75,11 +73,9 @@
     <h2>Selected Projects</h2>
 
     <div class="entry">
-      <div class="entry-title"><a href="https://github.com/bakhtawar-i/EEG-Seizure-Fusion-Probe" target="_blank">EEG Seizure Fusion Probe</a></div>
+      <div class="entry-title"><a href="https://github.com/bakhtawar-i/EEG-Seizure-Fusion-Probe" target="_blank">Clinical EEG Foundation Model Probe</a></div>
       <div class="entry-body">
-        Seizure detection on CHB-MIT with LaBraM fine-tuning. Addressing severe class imbalance
-        (0.1&ndash;0.6% seizure windows) with sensitivity, AUC-PR, and false-alarms-per-hour as
-        primary metrics rather than accuracy. In progress &mdash;
+        EEG seizure detection on CHB-MIT, benchmarking a feature-based GBM baseline against fine-tuned EEG foundation models (LaBraM, BENDR, NeuroGPT). Baseline GBM with expanded spectral/wavelet/cross-channel features reaches AUC-PR 0.174 (sensitivity 0.34 @ 34 FA/hr) on a held-out patient split. Currently fine-tuning LaBraM on CHB-MIT to test whether documented epilepsy-detection underperformance in foundation models replicates under a from-scratch pipeline; BENDR and NeuroGPT comparisons planned next.
       </div>
     </div>
 
